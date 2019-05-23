@@ -1,6 +1,5 @@
-update product where product_id = $1
-set description
-= $2;
-
-select *
-from product;
+UPDATE product
+SET DESCRIPTION = $2
+WHERE product_id = $1;
+SELECT *
+FROM product;
